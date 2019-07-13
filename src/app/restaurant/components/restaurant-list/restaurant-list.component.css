@@ -1,0 +1,35 @@
+.restaurant-list{
+    padding-top:60px;
+}
+
+.restaurant-cards {
+   z-index: 1; 
+}
+
+.restaurant-cards.hide {
+    display:none;
+ }
+
+.restaurant-detail-view-section.hide {
+    display:none;
+}
+
+app-restaurant-detail-view {
+    position:fixed;
+    top:76px;
+    width: 0%;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+app-restaurant-detail-view.show {
+  position:fixed;
+  top:76px;
+  opacity: 1;
+  width:100%;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}

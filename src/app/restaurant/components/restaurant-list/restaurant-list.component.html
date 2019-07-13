@@ -1,0 +1,13 @@
+<div class="container-fluid restaurant-list">
+    <div class="row">
+        <div class="col-md-4 nopadding restaurant-cards {{listViewDisplayControlClass}}">
+            <div *ngFor="let restaurant of restaurants">
+                <app-restaurant-card [restaurant]="restaurant"></app-restaurant-card>
+            </div>
+        </div>
+       <!--<div class="d-none d-md-block d-lg-block col-md-8 nopadding">-->
+        <div class="col-md-8 nopadding restaurant-detail-view-section {{detailDisplayControlClass}}">
+            <app-restaurant-detail-view class="{{animateClass}}" [selectedRestaurant]="selectedRestaurant"></app-restaurant-detail-view>
+        </div> 
+    </div>
+</div>

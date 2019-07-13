@@ -1,0 +1,43 @@
+.restaurant-card { 
+    position: relative; 
+}
+
+
+.restaurant-card-image { 
+    position: relative; 
+    width:100%;
+    height:220px;
+    cursor: url(/assets/images/tab_internets@2x.png),auto;
+}
+
+.restaurant-card::after {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, black 100%);
+    top: 190px;
+    height: 30px;
+    width: 100%;
+    content: '';
+  }
+
+.restaurant-title {
+    position: absolute; 
+    top: 160px; 
+    left: 0; 
+    width: 100%; 
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    font-size: 16px;
+    padding: 0px 0px 6px 12px; 
+}
+
+.restaurant-category {
+    position: absolute; 
+    top: 180px; 
+    left: 0; 
+    width: 100%; 
+    color: white; 
+    font: 24px/45px Helvetica, Sans-Serif; 
+    font-size: 12px;
+    padding: 0px 0px 6px 12px; 
+}

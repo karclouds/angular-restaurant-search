@@ -1,0 +1,40 @@
+.restaurant-location-main {
+    width:100%;
+    height:300px;
+}
+
+.restaurant-location-sub{
+    position: relative;
+    background-color: #34b479;
+    color: #FFFFFF;
+    padding: 12px;
+    font: Helvetica, Sans-Serif; 
+    height: 60px;
+}
+
+.restaurant-location-sub-name {
+    position: relative;
+    font-weight: bold; 
+    font-size:16px;
+}
+
+.restaurant-location-sub-category {
+    position: relative;
+    font-size:12px;
+}
+
+.restaurant-address{
+    padding: 15px 0px 26px 12px;
+}
+
+.restaurant-phone{
+    padding: 0px 0px 26px 12px;
+}
+
+.restaurant-social{
+    padding-left: 12px;
+}
+
+agm-map{
+    height: 300px
+}

@@ -1,0 +1,19 @@
+<div *ngIf="selectedRestaurant">
+    <div class="restaurant-location-main">
+        <agm-map [latitude]="selectedRestaurant.location.lat" [zoom]="18" [longitude]="selectedRestaurant.location.lng">
+            <agm-marker  [latitude]="selectedRestaurant.location.lat" [longitude]="selectedRestaurant.location.lng">
+                    <agm-info-window [disableAutoPan]="true" [isOpen]="true">
+                            <span [innerHTML]="getThisRestaurantAddress()"></span>
+                    </agm-info-window>
+            </agm-marker>
+        </agm-map>
+    </div>
+    <div class="restaurant-location-sub container-fluid">
+        <div class="restaurant-location-sub-name">{{selectedRestaurant.name}}</div>
+        <div class="restaurant-location-sub-category">{{selectedRestaurant.category}}</div>
+    </div>
+    <div class="restaurant-address" [innerHTML]="getThisRestaurantAddress()"></div>
+
+    <div class="restaurant-phone"><a href="{{'tel:' + selectedRestaurant.contact.formattedPhone}}">{{selectedRestaurant.contact.formattedPhone}}</a></div>
+    <div class="restaurant-social">@{{selectedRestaurant.contact.twitter}}</div>
+</div>

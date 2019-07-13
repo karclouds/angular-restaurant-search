@@ -1,0 +1,10 @@
+.nav-title {
+    display: block;
+}
+.nav-header-style {
+    background-color: #43E895;
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    font-size: 17px;
+    color: rgb(255,255,255);
+    height:60px;
+}
