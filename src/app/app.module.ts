@@ -20,7 +20,7 @@ import { GlobalHeaderComponent } from './restaurant/components/global-header/glo
   imports: [
     BrowserModule,
     HttpClientModule,
-    AgmCoreModule.forRoot({apiKey:"AIzaSyC2xl3zUmRc5GsAQdsmTZCJt71QS0GRLCA"})
+    AgmCoreModule.forRoot({apiKey:"<YOUR_GOOGLE_MAP_KEY>"})
   ],
   providers: [],
   bootstrap: [AppComponent]
