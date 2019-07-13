@@ -7,10 +7,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Angular CLI ( npm install -g angular-cli )
 
 ## Dev Setup and Test
-1. >  cd restaurants
-2. >  npm install 
-3. >  ng serve
-4. >  http://localhost:4200/
+1. >  npm install 
+2. >  ng serve
+3. >  http://localhost:4200/
 
 ## Build
 
